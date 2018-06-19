@@ -1,0 +1,31 @@
+.fifth{
+	min-height: 100vh;
+}
+.fifth__bg{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: url('../img/main/o-AIRPLANES-facebook-min.jpg') center no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.fifth__list{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 50px 0;
+	margin-bottom: -50px;
+}
+.fifth__item{
+	width: 21%;
+	height: 16vw;
+	background: #fff;
+	margin-bottom: 50px;
+	transition: .3s;
+	&:hover{
+		border: 5px solid $orange-light;
+	}
+}

@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.ttf');
+    src: url('../fonts/FontAwesome.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Logo';
+	src: url('../fonts/Logo.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-bold';
+	src: url('../fonts/Raleway-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-bolditalic';
+	src: url('../fonts/Raleway-BoldItalic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-italic';
+	src: url('../fonts/Raleway-Italic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-light';
+	src: url('../fonts/Raleway-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-medium';
+	src: url('../fonts/Raleway-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-thin';
+	src: url('../fonts/Raleway-Thin.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin Font($style: regular) {
+	font-family: 'Raleway';
+
+	@if $style == bold {
+		font-family: 'Raleway-bold';
+	}
+
+	@if $style == light {
+		font-family: 'Raleway-light';
+	}
+
+	@if $style == medium {
+		font-family: 'Raleway-medium';
+	}
+    
+  @if $style == italic {
+		font-family: 'Raleway-italic';
+	}
+
+	@if $style == thin {
+		font-family: 'Raleway-thin';
+	}
+}

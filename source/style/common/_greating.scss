@@ -1,0 +1,74 @@
+/************************************************
+Стандартная настройка!!!
+************************************************/
+
+// adjustment vars
+$container-width: 1150px;
+// adjustment styles
+body,
+html {
+		width: 100%;
+		height: 100%;
+		font-size: 16px;
+}
+
+body {
+		@include Font();
+		font-size: 16px;
+		line-height: 1.42;
+		-webkit-font-smoothing: antialiased;
+		background: $bg;
+		color: $txt;
+}
+
+* {
+		box-sizing: border-box;
+}
+
+.wrapper {
+		min-height: 100%;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+}
+
+.container {
+		@extend %clearfix;
+		width: $container-width;
+		margin: 0 auto;
+}
+
+li {
+		list-style: none;
+}
+
+ul {
+		padding: 0;
+		margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $txt;
+	&:hover{
+		color: $orange;
+		transition: .3s;
+	}
+}
+
+footer {
+	width: 100%;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include Font(bold);
+	margin-top: 0;
+	font-weight: normal;
+	color: $black;
+}

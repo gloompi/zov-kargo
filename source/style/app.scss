@@ -1,0 +1,29 @@
+// vars
+$black: #242424;
+$white: #fff;
+$orange: #E65100;
+$orange-light: #F57C00;
+$grey: #757575;
+$txt: #212121;
+$bg: #E3F2FD;
+$bg2: #BBDEFB;
+
+
+// layout
+@import "common/_font";
+@import "common/font-awesome.min.scss";
+@import "common/_media";
+@import "common/_sprite";
+@import "common/_mixins";
+@import "common/_media";
+@import "common/_greating";
+
+// styles
+@import "common/footer";
+@import "common/header";
+@import "common/pages/first";
+@import "common/pages/second";
+@import "common/pages/third";
+@import "common/pages/fourth";
+@import "common/pages/fifth";
+@import "common/pages/sixth";
